@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Task Admistration</title>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+	integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	crossorigin="anonymous">
+	
+</head>
+<body>
+	
+<div  class="container my-2">
+	<h1>Task Lists</h1>
+	<a  th:href= "@{/showNewTaskEntry}"  class="btn btn-primary btn-sm mb-3"> Add New Task</a>
+	
+	<table border="4" class="table table-striped table-responsive-md">
+		<thead>
+			<tr>
+			<th>Task Id</th>
+				<th>Title</th>
+				<th>Description</th>
+				<th>Completed</th> 
+			
+	
+					<th> Actions </th>
+			</tr>
+		</thead>
+		
+	<!--thymeleaf code-->
+		<tbody>
+			<tr th:each="task : ${ListTasks}">
+				
+			<td th:text="${task.id}"></td>
+			<td th:text="${task.title}"></td>
+	       <td th:text="${task.description}"></td>
+	       <td th:text="${task.completed}"></td>
+	       
+	       <td> <a th:href="@{/showUpdate/{id}(id=${task.id})}" class="btn btn-primary">Update</a>
+					    <a th:href="@{/deleteTask/{id}(id=${task.id})}" class="btn btn-danger">Delete</a>
+					</td>
+				  
+			</tr>
+		</tbody>
+</table>
+	
+</div>
+</body>
+</html>
