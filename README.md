@@ -14,14 +14,20 @@ Learning of the day: " When you use annotation @ResponseBody, you actually tell 
 3. Pagination: After successfully creating CRUD operations with a clean interface and all working code, I wanted to add Pagination but after hours of struggle, I realised my working code was messed up.
 and I found multiple errors and with time ticking away soon, I decided to hold pagination and push the code to GITHUB.
 
+
+And also, I'm less familiar with spring security, so I couldn't use JWT tokens. I had a little less time, so I couldn't include the search and filter options.
+
+
+
 Instructions for Running My Code:
 1. Pull or download the project from GIT.
 2. Add it to Spring boot application. The minimum version is 3
 3. There should be a MySQL database on your local machine. As I used MySQL as a database, my credentials are saved on the application.properties, "Please, change the password as per your database."
-4. Make sure your spring boot application has Thymeleaf installed. If not, install it from the market place at STS.(Just in case.)
+4. Make sure your spring boot application has Thymeleaf installed. If not, install it at the market place at STS.(Just in case.)
 5. Then, you are good to run the code if the database connection is successful.
 6. Then, go to the browser and paste this URL: http://localhost:8080/.
 7. The interface occurs, as I'll be attaching screenshots of it.
 8. If you find any difficulty executing this, feel free to ping me.
-9. Thank you.
+9. I've attached the video link for execution. You can also ring me up if you need any assistance from me.
+10. Thank you.
    
